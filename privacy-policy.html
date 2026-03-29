@@ -101,6 +101,13 @@
         a {
             color: var(--link-color);
         }
+        .highlight-box {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent-color);
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
@@ -110,67 +117,60 @@
             <p>Privacy Policy</p>
         </div>
 
-        <p class="updated">Last updated: March 28, 2026</p>
+        <p class="updated">Last Updated: March 29, 2026 | Version: v2.2</p>
 
-        <p>Thank you for using <strong>Receipt SN</strong>. This Privacy Policy explains how we collect, use, and protect your information when you use our iOS application ("App").</p>
+        <p>Thank you for choosing <strong>Receipt SN</strong>. We are committed to protecting your financial privacy through a "Privacy-by-Design" architecture. This policy outlines how we handle your information and your absolute rights over your data.</p>
 
-        <h2>1. Information We Collect</h2>
-        <p><strong>Receipt Images & Data:</strong> When you scan receipts, the images and extracted data (date, merchant, amount, items) are stored locally on your device in a private sandbox. We do not have access to this data.</p>
-        <p><strong>Subscription & Billing:</strong> All payment processing is handled securely by Apple through the App Store. We do not store credit card numbers or billing details on our servers.</p>
-        <p><strong>App Usage Data:</strong> We may collect anonymous, aggregated usage statistics to improve the App. This data cannot identify you personally.</p>
-        <p><strong>Device Information:</strong> We may collect basic device information (model, iOS version) for crash reporting and app optimisation purposes.</p>
+        <div class="highlight-box">
+            <strong>Zero Human-in-the-Loop Commitment:</strong><br>
+            Receipt SN uses 100% automated AI technology. No human employees, contractors, or third-party workers ever view or manually process your receipt images or data.
+        </div>
 
-        <h2>2. How We Use Your Information</h2>
+        <h2>1. Our Privacy Philosophy</h2>
+        <p>Receipt SN empowers users with full data sovereignty. Your original financial data, receipt images, and extracted records are stored exclusively within your device's private sandbox. We do not access, monitor, or claim ownership of your data.</p>
+
+        <h2>2. Data Collection & Usage</h2>
         <ul>
-            <li>To provide receipt scanning and storage services on your device</li>
-            <li>To process subscription purchases and manage your account through Apple</li>
-            <li>To improve app performance and fix bugs (anonymous data only)</li>
-            <li>To provide customer support via email</li>
+            <li><strong>Financial Data:</strong> Compressed images and extracted transaction details are stored locally on your device.</li>
+            <li><strong>Technical Analytics & Indicator Use:</strong> We collect anonymized usage metrics (e.g., device model, system version, aggregated monthly scan volume) for product optimization. We reserve the right to use aggregated, non-personally identifiable data for performance benchmarking and promotional indicators.</li>
+            <li><strong>Subscription Data:</strong> Payments are processed via Apple App Store; we do not store or access your full credit card details.</li>
         </ul>
 
-        <h2>3. Data Storage & Security</h2>
-        <p><strong>Local Storage:</strong> All receipt images and personal data are stored in your device's private sandbox. You can delete this data at any time by deleting the app or clearing the data within Settings.</p>
-        <p><strong>Server Processing:</strong> When you use the AI-powered receipt analysis feature, images are temporarily sent to our secure backend (powered by Google Gemini) for processing. Data is processed in memory and is not stored permanently on our servers.</p>
-        <p><strong>Encryption:</strong> Data in transit uses TLS 1.2+ encryption. Data at rest on your device uses iOS's built-in encryption.</p>
-
-        <h2>4. Third-Party Services</h2>
+        <h2>3. Intelligent Processing & Global Transit</h2>
+        <p>We maximize privacy through dynamic processing paths:</p>
         <ul>
-            <li><strong>Apple (App Store / StoreKit):</strong> Handles all subscription payments. Their privacy policy applies to payment processing.</li>
-            <li><strong>Google Gemini AI:</strong> Used for receipt text extraction. Data is processed temporarily and not retained.</li>
-            <li><strong>iCloud Sync:</strong> If you enable iCloud sync, data is stored in your personal iCloud container with end-to-end encryption. Only you can access this data.</li>
+            <li><strong>Local NPU Processing Mode:</strong> Once the Local AI package is enabled, all inference happens on-device with **Zero Data Transmission**.</li>
+            <li><strong>Cloud-Assisted Processing (Dynamic Privacy Logic):</strong>
+                <ul>
+                    <li><strong>Standard Scripts (e.g., English):</strong> We transmit **only extracted text**; no image data is sent to the cloud.</li>
+                    <li><strong>Complex Scripts:</strong> For high-precision visual context requirements, compressed images may be transmitted to ensure accuracy.</li>
+                    <li><strong>Immediate Erasure:</strong> All cloud analysis is performed in volatile cache and is **permanently purged** immediately after extraction.</li>
+                </ul>
+            </li>
         </ul>
 
-        <h2>5. AI & On-Device Processing</h2>
-        <p><strong>Local AI Mode:</strong> If you download the optional offline AI package, all receipt analysis is performed entirely on your device. No data leaves your device.</p>
-        <p><strong>Cloud AI Mode:</strong> Receipt images are temporarily sent to our backend for analysis. Images are processed in volatile memory and are not stored on our servers after processing.</p>
-        <p><strong>We Will Never:</strong></p>
+        <h2>4. Zero-Training Commitment (No-Training Policy)</h2>
+        <p>We solemnly affirm that Receipt SN **NEVER** uses your receipts, financial records, or personal data to train our AI models or third-party models. Your data remains your private property.</p>
+
+        <h2>5. Security Performance & Legal Limitation</h2>
+        <p>We employ multi-layer encryption for both local storage and data in transit. Users acknowledge that while we use industry-leading protective measures, no internet transmission is 100% immune. We shall not be held liable for security breaches arising from factors outside of our control (e.g., third-party device vulnerabilities or unencrypted networks).</p>
+
+        <h2>6. Third-Party Independence</h2>
+        <p>We partner only with industry leaders (Apple, Google Cloud) under strict privacy mandates. They act as independent data processors with their own policies. Receipt SN is not liable for technical failures or data breaches originating within third-party infrastructure.</p>
+
+        <h2>7. Modifications & Control (Terms of Updates)</h2>
         <ul>
-            <li>Use your receipt data to train AI models</li>
-            <li>Sell or share your personal financial information to third parties</li>
-            <li>Access your receipt content without your explicit consent</li>
+            <li><strong>Right to Modify:</strong> We reserve the right to update this policy at any time. Significant changes will be announced via in-app notifications.</li>
+            <li><strong>Continued Usage:</strong> **By continuing to use Receipt SN after an updated version of this policy is posted, you acknowledge and agree to be bound by the revised terms. If you do not agree to the new terms, you must cease use of the App immediately.**</li>
+            <li><strong>Right to Erasure:</strong> You can export or delete data at any time. Deletion permanently removes records from your device and iCloud.</li>
         </ul>
 
-        <h2>6. Your Rights</h2>
-        <p>Since all data is stored locally on your device, you have full control:</p>
-        <ul>
-            <li>Delete all data at any time by deleting the app or using the in-app data management tools</li>
-            <li>Disable iCloud sync at any time in Settings</li>
-            <li>Contact us at <a href="mailto:nestir@gmail.com">nestir@gmail.com</a> for data-related requests</li>
-        </ul>
-
-        <h2>7. Children's Privacy</h2>
-        <p>This App is not intended for children under the age of 13 (or equivalent minimum age in your jurisdiction). We do not knowingly collect data from children.</p>
-
-        <h2>8. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date. We encourage you to review this policy periodically.</p>
-
-        <h2>9. Contact Us</h2>
-        <p>If you have any questions or concerns about this Privacy Policy, please contact us:</p>
-        <p><strong>Email:</strong> <a href="mailto:nestir@gmail.com">nestir@gmail.com</a></p>
+        <h2>8. Contact Us</h2>
+        <p><strong>Email:</strong> <a href="mailto:support@studionestir.com">support@studionestir.com</a></p>
 
         <div class="footer">
-            <p>&copy; 2026 Receipt SN. All rights reserved.</p>
-            <p><a href="https://github.com/CCConan/receipt-sn-support">Support</a></p>
+            <p>&copy; 2026 Receipt SN. Powered by Studionestir Privacy Architecture.</p>
+            <p><a href="privacy-policy-zh.html">繁體中文版 (Traditional Chinese)</a> | <a href="terms.html">Terms of Service</a></p>
         </div>
     </div>
 </body>
