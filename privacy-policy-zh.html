@@ -26,23 +26,23 @@
             }
         }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            line-height: 1.7;
         }
         .container {
-            max-width: 760px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 40px 24px 80px;
         }
         .header {
             text-align: center;
             margin-bottom: 40px;
             padding-bottom: 30px;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 2px solid var(--border-color);
         }
         .header h1 {
             font-size: 28px;
@@ -56,29 +56,33 @@
             margin: 0;
         }
         h2 {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 600;
             color: var(--accent-color);
-            margin-top: 36px;
+            margin-top: 32px;
             margin-bottom: 12px;
             padding-bottom: 8px;
             border-bottom: 1px solid var(--border-color);
         }
-        p, li {
+        p {
             color: var(--text-color);
             font-size: 15px;
+            margin-bottom: 12px;
         }
         ul {
             padding-left: 24px;
+            margin-bottom: 12px;
         }
         li {
             margin-bottom: 8px;
+            color: var(--text-color);
+            font-size: 15px;
         }
         .footer {
             text-align: center;
             margin-top: 60px;
             padding-top: 24px;
-            border-top: 1px solid var(--border-color);
+            border-top: 2px solid var(--border-color);
             color: var(--secondary-text);
             font-size: 13px;
         }
@@ -86,14 +90,14 @@
             color: var(--accent-color);
             text-decoration: none;
         }
-        .footer a:hover {
-            text-decoration: underline;
-        }
         .updated {
             color: var(--secondary-text);
             font-size: 13px;
             text-align: right;
             margin-bottom: 30px;
+            padding: 12px 16px;
+            background: var(--card-bg);
+            border-radius: 8px;
         }
         strong {
             color: var(--text-color);
@@ -103,10 +107,10 @@
         }
         .highlight-box {
             background-color: var(--card-bg);
-            padding: 20px;
-            border-radius: 12px;
+            padding: 16px 20px;
+            border-radius: 8px;
             border-left: 4px solid var(--accent-color);
-            margin: 20px 0;
+            margin: 16px 0;
         }
     </style>
 </head>
@@ -114,61 +118,82 @@
     <div class="container">
         <div class="header">
             <h1>Receipt SN</h1>
-            <p>隱私政策 (Privacy Policy)</p>
+            <p>隱私政策</p>
         </div>
 
-        <p class="updated">最後更新日期：2026年3月29日 | 版本：v2.2</p>
+        <p class="updated">最後更新：2026年4月5日 | 版本：v3.0</p>
 
-        <p>感謝您選擇 <strong>Receipt SN</strong>。我們致力於透過領先的數據架構保護您的財務隱私。本政策詳細說明了我們如何處理您的資訊，並賦予您對數據的絕對掌控權。</p>
+        <p>感謝您選擇 Receipt SN。本政策說明我們如何收集、使用和保護您的資料。請在使用前仔細閱讀。</p>
 
+        <h2>1. 我們收集的資料</h2>
+        <ul>
+            <li><strong>收據資料</strong>：您拍攝或匯入的收據圖片，以及從中提取的商家名稱、金額、日期、項目等資訊。</li>
+            <li><strong>裝置資訊</strong>：裝置型號、作業系統版本、App 版本等基本資訊，用於診斷問題。</li>
+            <li><strong>錯誤日誌</strong>：當 App 發生問題時，我們可能會收集匿名錯誤報告以改善穩定性。</li>
+            <li><strong>訂閱資訊</strong>：您的訂閱狀態由 Apple App Store 管理，我們不會儲存您的完整支付資訊。</li>
+        </ul>
+
+        <h2>2. 資料如何被使用</h2>
+        <p>Receipt SN 使用您的資料來：</p>
+        <ul>
+            <li>提供 AI 辨識功能，幫您從收據中提取結構化資料</li>
+            <li>將資料整理、分類並儲存</li>
+            <li>產生統計報表與匯出檔案</li>
+            <li>診斷並修復技術問題</li>
+        </ul>
+
+        <h2>3. AI 與自動化處理</h2>
         <div class="highlight-box">
-            <strong>零人工干預承諾 (Zero-Human Commitment)：</strong><br>
-            Receipt SN 採用 100% 自動化 AI 技術。任何人類員工或第三方外包人員均無法閱覽或手動處理您的收據圖片或數據。
+            <strong>Receipt SN 絕不使用您的收據圖片、文字或解析結果來訓練 AI 模型。</strong>您的資料只用於提供您要求的服務功能。
         </div>
+        <p>當需要使用雲端 AI 服務來辨識收據時，圖片或文字片段僅用於當次處理，解析完成後即不再保留。</p>
 
-        <h2>1. 我們的核心觀念</h2>
-        <p>Receipt SN 賦予用戶數據所有權。您的原始財務數據、收據圖片及解析後的條目預設均存儲在您的本地設備沙盒中。我們不會接觸、審核或將您的數據視為我們的資產。</p>
+        <h2>4. 資料儲存位置</h2>
+        <p>Receipt SN 預設將您的收據圖片與解析結果儲存在<strong>本機設備</strong>上。我們不會主動存取您的私人資料。</p>
+        <p>若您啟用 iCloud 備份或同步功能，資料將由 Apple 提供儲存空間。有關 iCloud 的資料處理，請參考 Apple 的隱私政策。</p>
+        <p>若您刪除 App，本機資料會隨即移除。</p>
 
-        <h2>2. 數據採集與用途</h2>
+        <h2>5. 資料安全</h2>
+        <p>我們採用加密技術保護您的資料，包括：</p>
         <ul>
-            <li><strong>財務數據</strong>：包含拍攝的照片及從中提取的交易資訊。這些資料預設僅儲存在您的手機本地。</li>
-            <li><strong>技術數據與匿名分析</strong>：我們會收集設備型號、系統版本、App 崩備報告及功能使用頻率（如月掃描總量）。我們保留將這些「無法識別到特定個人」的聚合匿名數據用於產品優化、效能基準測試及公司宣傳的權利。</li>
-            <li><strong>訂閱資訊</strong>：我們透過 Apple 官方渠道驗證會員資格，絕不持有您的信用卡完整資訊。</li>
+            <li>本機資料加密儲存</li>
+            <li>網絡傳輸加密（TLS/SSL）</li>
+        </ul>
+        <p>請注意，沒有任何系統能保證絕對安全。在法律允許的最大範圍內，我們不對第三方行為或不可預見的安全事件承擔責任。</p>
+
+        <h2>6. 第三方服務</h2>
+        <p>Receipt SN 可能使用以下第三方服務：</p>
+        <ul>
+            <li><strong>Apple</strong>：App Store 交易驗證、iCloud 資料同步（如有啟用）</li>
+            <li><strong>雲端 AI 服務</strong>：用於收據辨識（僅處理當次請求）</li>
+            <li><strong>錯誤追蹤服務</strong>：用於改善 App 穩定性</li>
+        </ul>
+        <p>這些服務提供者有自己的隱私政策，詳情請參閱其官方網站。</p>
+
+        <h2>7. 兒童資料</h2>
+        <p>Receipt SN 並非專為 13 歲以下兒童設計，我們不會刻意收集兒童的個人資料。</p>
+
+        <h2>8. 您的權利</h2>
+        <p>您可以：</p>
+        <ul>
+            <li>隨時使用 App 內的匯出功能下載您的資料</li>
+            <li>刪除個別收據或整批資料</li>
+            <li>刪除 App 以移除所有本機資料</li>
         </ul>
 
-        <h2>2. 智慧型數據處理與跨國傳輸</h2>
-        <p>我們根據不同情況採用最保護隱私的處理路徑：</p>
-        <ul>
-            <li><strong>本地 NPU 解析模式</strong>：在載入本地 AI 數據包後，所有分析均在您的手機晶片完成，<strong>數據零外傳</strong>。</li>
-            <li><strong>雲端輔助模式 (Cloud-Assisted Processing)</strong>：
-                <ul>
-                    <li>對於標準語言（如英文），我們僅傳送提取的文字內容；對於複雜語言，系統可能會傳送壓縮後的圖片以確保識別準確性。</li>
-                    <li><strong>即刻抹除與跨國處理</strong>：分析過程可能發生在您居住地以外的安全伺服器。數據在緩存中瞬時解析後會<strong>立即徹底抹除</strong>，我們不在伺服器端留存任何資訊。</li>
-                </ul>
-            </li>
-        </ul>
+        <h2>9. 政策更新</h2>
+        <p>我們可能不時更新本政策。更改後若您繼續使用 Receipt SN，即代表您接受新版政策。</p>
+        <p>更多關於服務使用規範，請參考我們的《<a href="terms-zh.html">服務條款</a>》。</p>
 
-        <h2>4. 零訓練承諾 (No-Training Policy)</h2>
-        <p>我們鄭重承諾：Receipt SN 絕不使用您的原始收據圖片、文字或解析結果來「練習」或「訓練」我們的 AI 模型。您的隱私不會被轉化為模型開發的數據。</p>
-
-        <h2>5. 安全極限說明 (Security Disclosure)</h2>
-        <p>我們在手機本地及傳輸過程中均一使用業界領先的多重加密。用戶理解並同意，雖然我們採取了最嚴密的保護措施，但互聯網傳輸不存在絕對的安全。非因本 App 過失（如第三方設備漏洞或電信服務攔截）造成的安全性問題，我們將在法律允許範圍內優予免責。</p>
-
-        <h2>6. 第三方服務商的獨立性</h2>
-        <p>我們僅與 Apple (iCloud/App Store) 及知名雲端引擎合作。他們是獨立的數據處理商，擁有其自身的隱私協議。若其服務器發生不可控的技術故障或泄露，我們不對第三方基礎設施商的行為承擔連帶責任。</p>
-
-        <h2>7. 政策之修改與您的掌控權 (Modifications)</h2>
-        <ul>
-            <li><strong>條款修改權</strong>：我們保留隨時修改本政策之權利。重大變更將透過 App 內顯著方式提示。</li>
-            <li><strong>同意之延續 (Continued Acceptance)</strong>：<strong>一旦修訂後的政策發佈，若您繼續使用 Receipt SN，即代表您已理解並同意接受最新版本。若您不同意新修訂的內容，請停止使用並移除 App。</strong></li>
-            <li><strong>數據掌控</strong>：您可以隨時透過「導出數據表格」提取紀錄。一旦您刪除單據或移除 App，對應數據將從您的手機及 iCloud 備份空間中永久消失。</li>
-        </ul>
-
-        <h2>8. 聯繫我們</h2>
-        <p><strong>Email:</strong> <a href="mailto:support@studionestir.com">support@studionestir.com</a></p>
+        <h2>10. 聯絡我們</h2>
+        <p>如對本政策有任何問題，歡迎與我們聯絡：</p>
+        <p><strong>公司：</strong>Studio Nestir Limited<br>
+        <strong>電郵：</strong><a href="mailto:support@studionestir.com">support@studionestir.com</a><br>
+        <strong>網站：</strong><a href="https://CCConan.github.io/receipt-sn-support">Receipt SN 支援頁面</a></p>
 
         <div class="footer">
-            <p>&copy; 2026 Studio Nestir Limited. All rights reserved.</p>
+            <p>&copy; 2026 Studio Nestir Limited. 版權所有。</p>
+            <p><a href="terms-zh.html">服務條款</a> | <a href="index.html">首頁</a></p>
         </div>
     </div>
 </body>

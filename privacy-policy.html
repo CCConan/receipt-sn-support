@@ -31,18 +31,18 @@
             color: var(--text-color);
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            line-height: 1.7;
         }
         .container {
-            max-width: 760px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 40px 24px 80px;
         }
         .header {
             text-align: center;
             margin-bottom: 40px;
             padding-bottom: 30px;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 2px solid var(--border-color);
         }
         .header h1 {
             font-size: 28px;
@@ -56,29 +56,33 @@
             margin: 0;
         }
         h2 {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 600;
             color: var(--accent-color);
-            margin-top: 36px;
+            margin-top: 32px;
             margin-bottom: 12px;
             padding-bottom: 8px;
             border-bottom: 1px solid var(--border-color);
         }
-        p, li {
+        p {
             color: var(--text-color);
             font-size: 15px;
+            margin-bottom: 12px;
         }
         ul {
             padding-left: 24px;
+            margin-bottom: 12px;
         }
         li {
             margin-bottom: 8px;
+            color: var(--text-color);
+            font-size: 15px;
         }
         .footer {
             text-align: center;
             margin-top: 60px;
             padding-top: 24px;
-            border-top: 1px solid var(--border-color);
+            border-top: 2px solid var(--border-color);
             color: var(--secondary-text);
             font-size: 13px;
         }
@@ -86,14 +90,14 @@
             color: var(--accent-color);
             text-decoration: none;
         }
-        .footer a:hover {
-            text-decoration: underline;
-        }
         .updated {
             color: var(--secondary-text);
             font-size: 13px;
             text-align: right;
             margin-bottom: 30px;
+            padding: 12px 16px;
+            background: var(--card-bg);
+            border-radius: 8px;
         }
         strong {
             color: var(--text-color);
@@ -103,10 +107,10 @@
         }
         .highlight-box {
             background-color: var(--card-bg);
-            padding: 20px;
-            border-radius: 12px;
+            padding: 16px 20px;
+            border-radius: 8px;
             border-left: 4px solid var(--accent-color);
-            margin: 20px 0;
+            margin: 16px 0;
         }
     </style>
 </head>
@@ -117,59 +121,79 @@
             <p>Privacy Policy</p>
         </div>
 
-        <p class="updated">Last Updated: March 29, 2026 | Version: v2.2</p>
+        <p class="updated">Last Updated: April 5, 2026 | Version: v3.0</p>
 
-        <p>Thank you for choosing <strong>Receipt SN</strong>. We are committed to protecting your financial privacy through a "Privacy-by-Design" architecture. This policy outlines how we handle your information and your absolute rights over your data.</p>
+        <p>Thank you for choosing Receipt SN. This policy explains how we collect, use, and protect your data. Please read carefully before using the app.</p>
 
+        <h2>1. Information We Collect</h2>
+        <ul>
+            <li><strong>Receipt Data</strong>: Receipt images you capture or import, along with extracted information such as merchant name, amount, date, and line items.</li>
+            <li><strong>Device Information</strong>: Basic details like device model, OS version, and app version for diagnostics.</li>
+            <li><strong>Error Logs</strong>: Anonymous error reports collected when the app encounters issues to help improve stability.</li>
+            <li><strong>Subscription Information</strong>: Your subscription status is managed by Apple App Store. We do not store your complete payment information.</li>
+        </ul>
+
+        <h2>2. How We Use Your Information</h2>
+        <p>Receipt SN uses your data to:</p>
+        <ul>
+            <li>Provide AI recognition features to extract structured data from receipts</li>
+            <li>Organize and categorize your data</li>
+            <li>Generate statistical reports and export files</li>
+            <li>Diagnose and fix technical issues</li>
+        </ul>
+
+        <h2>3. AI and Automated Processing</h2>
         <div class="highlight-box">
-            <strong>Zero Human-in-the-Loop Commitment:</strong><br>
-            Receipt SN uses 100% automated AI technology. No human employees, contractors, or third-party workers ever view or manually process your receipt images or data.
+            <strong>Receipt SN will never use your receipt images, text, or recognition results to train AI models.</strong> Your data is used solely to provide the services you request.
         </div>
+        <p>When cloud-based AI services are needed for receipt recognition, images or text snippets are only processed for that single request and are not retained afterward.</p>
 
-        <h2>1. Our Privacy Philosophy</h2>
-        <p>Receipt SN empowers users with full data sovereignty. Your original financial data, receipt images, and extracted records are stored exclusively within your device's private sandbox. We do not access, monitor, or claim ownership of your data.</p>
+        <h2>4. Data Storage</h2>
+        <p>Receipt SN stores your receipt images and recognition results on your <strong>local device</strong> by default. We do not actively access your private data.</p>
+        <p>If you enable iCloud backup or sync, data will be stored using Apple's infrastructure. For iCloud data handling, please refer to Apple's privacy policy.</p>
+        <p>Deleting the app removes all local data.</p>
 
-        <h2>2. Data Collection & Usage</h2>
+        <h2>5. Data Security</h2>
+        <p>We use encryption to protect your data, including:</p>
         <ul>
-            <li><strong>Financial Data:</strong> Compressed images and extracted transaction details are stored locally on your device.</li>
-            <li><strong>Technical Analytics & Indicator Use:</strong> We collect anonymized usage metrics (e.g., device model, system version, aggregated monthly scan volume) for product optimization. We reserve the right to use aggregated, non-personally identifiable data for performance benchmarking and promotional indicators.</li>
-            <li><strong>Subscription Data:</strong> Payments are processed via Apple App Store; we do not store or access your full credit card details.</li>
+            <li>Encrypted local data storage</li>
+            <li>Network transmission encryption (TLS/SSL)</li>
+        </ul>
+        <p>Please note that no system can guarantee absolute security. To the maximum extent permitted by law, we are not liable for third-party actions or unforeseen security events.</p>
+
+        <h2>6. Third-Party Services</h2>
+        <p>Receipt SN may use the following third-party services:</p>
+        <ul>
+            <li><strong>Apple</strong>: App Store transaction verification, iCloud data sync (if enabled)</li>
+            <li><strong>Cloud AI Services</strong>: For receipt recognition (processing only the current request)</li>
+            <li><strong>Error Tracking Services</strong>: To improve app stability</li>
+        </ul>
+        <p>These service providers have their own privacy policies. Please refer to their official websites for details.</p>
+
+        <h2>7. Children's Data</h2>
+        <p>Receipt SN is not designed for children under 13. We do not knowingly collect personal information from children.</p>
+
+        <h2>8. Your Rights</h2>
+        <p>You can:</p>
+        <ul>
+            <li>Export your data anytime using the app's export feature</li>
+            <li>Delete individual receipts or all data at once</li>
+            <li>Remove the app to delete all local data</li>
         </ul>
 
-        <h2>3. Intelligent Processing & Global Transit</h2>
-        <p>We maximize privacy through dynamic processing paths:</p>
-        <ul>
-            <li><strong>Local NPU Processing Mode:</strong> Once the Local AI package is enabled, all inference happens on-device with **Zero Data Transmission**.</li>
-            <li><strong>Cloud-Assisted Processing (Dynamic Privacy Logic):</strong>
-                <ul>
-                    <li><strong>Standard Scripts (e.g., English):</strong> We transmit **only extracted text**; no image data is sent to the cloud.</li>
-                    <li><strong>Complex Scripts:</strong> For high-precision visual context requirements, compressed images may be transmitted to ensure accuracy.</li>
-                    <li><strong>Immediate Erasure:</strong> All cloud analysis is performed in volatile cache and is **permanently purged** immediately after extraction.</li>
-                </ul>
-            </li>
-        </ul>
+        <h2>9. Policy Updates</h2>
+        <p>We may update this policy from time to time. Continued use of Receipt SN after changes constitutes acceptance of the new policy.</p>
+        <p>For service usage guidelines, please refer to our <a href="terms.html">Terms of Service</a>.</p>
 
-        <h2>4. Zero-Training Commitment (No-Training Policy)</h2>
-        <p>We solemnly affirm that Receipt SN **NEVER** uses your receipts, financial records, or personal data to train our AI models or third-party models. Your data remains your private property.</p>
-
-        <h2>5. Security Performance & Legal Limitation</h2>
-        <p>We employ multi-layer encryption for both local storage and data in transit. Users acknowledge that while we use industry-leading protective measures, no internet transmission is 100% immune. We shall not be held liable for security breaches arising from factors outside of our control (e.g., third-party device vulnerabilities or unencrypted networks).</p>
-
-        <h2>6. Third-Party Independence</h2>
-        <p>We partner only with industry leaders (Apple, Google Cloud) under strict privacy mandates. They act as independent data processors with their own policies. Receipt SN is not liable for technical failures or data breaches originating within third-party infrastructure.</p>
-
-        <h2>7. Modifications & Control (Terms of Updates)</h2>
-        <ul>
-            <li><strong>Right to Modify:</strong> We reserve the right to update this policy at any time. Significant changes will be announced via in-app notifications.</li>
-            <li><strong>Continued Usage:</strong> **By continuing to use Receipt SN after an updated version of this policy is posted, you acknowledge and agree to be bound by the revised terms. If you do not agree to the new terms, you must cease use of the App immediately.**</li>
-            <li><strong>Right to Erasure:</strong> You can export or delete data at any time. Deletion permanently removes records from your device and iCloud.</li>
-        </ul>
-
-        <h2>8. Contact Us</h2>
-        <p><strong>Email:</strong> <a href="mailto:support@studionestir.com">support@studionestir.com</a></p>
+        <h2>10. Contact Us</h2>
+        <p>If you have any questions about this policy, please contact us:</p>
+        <p><strong>Company:</strong> Studio Nestir Limited<br>
+        <strong>Email:</strong> <a href="mailto:support@studionestir.com">support@studionestir.com</a><br>
+        <strong>Website:</strong> <a href="https://CCConan.github.io/receipt-sn-support">Receipt SN Support</a></p>
 
         <div class="footer">
             <p>&copy; 2026 Studio Nestir Limited. All rights reserved.</p>
+            <p><a href="terms.html">Terms of Service</a> | <a href="index.html">Home</a></p>
         </div>
     </div>
 </body>
