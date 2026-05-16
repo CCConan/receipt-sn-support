@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt SN - 應用支援</title>
+    <style>
+        :root {
+            --primary-color: #507A87;
+            --bg-color: #FBFBFD;
+            --text-color: #1D1D1F;
+            --secondary-text: #86868B;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            background: var(--primary-color);
+            border-radius: 22px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+            box-shadow: 0 8px 16px rgba(80,122,135,0.2);
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--secondary-text);
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            text-align: left;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #F2F2F7;
+        }
+
+        .section h2 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--secondary-text);
+            margin-bottom: 15px;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 500;
+            margin-top: 10px;
+            transition: transform 0.2s;
+        }
+
+        .contact-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 12px;
+            color: var(--secondary-text);
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="app-icon">$</div>
+        <h1>Receipt SN</h1>
+        <p class="subtitle">設計師打造的收據管理助手</p>
+
+        <div class="section">
+            <h2>關於</h2>
+            <p>Receipt SN 是一款專為旅行同高品質日常生活設計嘅收據助手。透過強大嘅多語言識別功能同優雅嘅數據界面，幫你輕鬆管理同可視化你嘅國際開支。</p>
+        </div>
+
+        <div class="section">
+            <h2>支援與回饋</h2>
+            <p>如果你遇到任何問題或有改進建議，我哋嘅設計團隊隨時準備為你提供幫助。</p>
+            <a href="mailto:support@studionestir.com" class="contact-btn">聯絡支援團隊</a>
+        </div>
+
+        <div class="section">
+            <h2>隱私</h2>
+            <p>我哋非常重視你嘅隱私。Receipt SN 採用「本地優先」嘅設計，確保你嘅財務數據安全地儲存在你嘅裝置上。</p>
+            <p><a href="privacy-policy-zh.html">查看詳細隱私政策</a></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Studio Nestir Limited. 版權所有。
+    </div>
+
+</body>
+</html>
