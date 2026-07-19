@@ -135,7 +135,7 @@
             <p>Privacy Policy</p>
         </div>
 
-        <p class="updated">Last Updated: June 15, 2026 | Version: v4.2</p>
+        <p class="updated">Last Updated: July 4, 2026 | Version: v4.2</p>
 
         <p>Thank you for choosing Receipt SN. Receipt SN is operated by <strong>Studio Nestir Limited</strong> ("Studio Nestir", "we", "us", or "our"). Where applicable data protection law uses the concept of a data controller, Studio Nestir is the controller for personal data processed under this Privacy Policy. This Privacy Policy explains what information may be processed when you use the app, why it is processed, and the choices available to you.</p>
         <p>Receipt SN is designed as a personal receipt organization tool. We aim to keep your receipt records under your control, use service providers only where needed to deliver requested features, and describe our practices in a clear and practical way.</p>
@@ -143,12 +143,11 @@
         <h2>1. Information Processed by the App (Stored Locally by Default)</h2>
         <p>Depending on how you use Receipt SN, the following categories of information may be processed. <strong>By default, receipt records are stored on your device and are not synced to iCloud unless you enable iCloud Sync. We do not use our servers as a permanent receipt storage service, and we do not sell your receipt data or use it for advertising, data brokerage, or advertising profiles.</strong></p>
         <ul>
-            <li><strong>Receipt content</strong>: receipt images you take or import, and structured information extracted from them, such as merchant names, dates, totals, taxes, payment method labels, categories, notes, line items, and other information you choose to scan, import, edit, or store. Receipt images or text may be processed temporarily by our selected service providers as part of the app's cloud-based recognition workflow. We do not store users' raw data on our servers.</li>
+            <li><strong>Receipt content</strong>: receipt images you take or import, and structured information extracted from them, such as merchant names, dates, totals, taxes, payment method labels, categories, notes, line items, and other information you choose to scan, import, edit, or store. Receipt images or text may be processed temporarily by our selected service providers as part of the app's cloud-based recognition workflow. We do not attach app account IDs, device IDs, or Apple account information to these cloud recognition requests, and we do not store users' raw receipt data on our servers.</li>
             <li><strong>User-created content</strong>: spaces, labels, category selections, export preferences, and other records you create inside the app.</li>
-            <li><strong>Device and app information</strong>: device model, operating system version, app version, language, region, a short device diagnostics hash used for cloud request troubleshooting, and other basic technical information needed for compatibility and support.</li>
-            <li><strong>Support and account identifiers</strong>: app-generated installation identifiers, support IDs, App Store entitlement state, and related service identifiers used to provide support, prevent abuse, and maintain access to app features.</li>
-            <li><strong>Diagnostics and support information</strong>: request diagnostics, crash information, error logs, and messages you send to us when requesting help. Please avoid sending sensitive information unless it is necessary for your request.</li>
-            <li><strong>Subscription information</strong>: subscription status, product identifiers, renewal state, and related App Store purchase metadata. Apple processes payment details; we do not receive your full card number or Apple ID password.</li>
+            <li><strong>Device and app information</strong>: operating system version, app version, language, region, and other basic technical information needed for compatibility and support. Cloud recognition requests are not sent with a persistent device identifier.</li>
+            <li><strong>Diagnostics and support information</strong>: crash information, error logs, and messages you choose to send to us when requesting help. Please avoid sending sensitive information unless it is necessary for your request.</li>
+            <li><strong>Subscription information</strong>: subscription status is read from Apple's StoreKit APIs to unlock paid features. Apple processes payments and manages purchase history. We do not receive your full card number, Apple ID password, or Apple account purchase history.</li>
         </ul>
 
         <h2>2. How We Collect Information</h2>
@@ -164,8 +163,7 @@
         <ul>
             <li>scan receipts and extract structured data such as merchant, date, total, category, and line items;</li>
             <li>organize, search, display, edit, export, and back up receipt records according to your settings;</li>
-            <li>verify subscription status, apply usage limits, and provide paid features;</li>
-            <li>issue and validate support IDs and app entitlement state where needed for service administration and customer support;</li>
+            <li>verify subscription status locally through StoreKit, apply usage limits, and provide paid features;</li>
             <li>maintain app security, prevent abuse, diagnose failures, and improve reliability;</li>
             <li>respond to support requests, legal requests, and obligations that apply to us.</li>
         </ul>
@@ -175,7 +173,7 @@
             <strong>We do not sell your receipt data, and we do not use it for advertising, data brokerage, building advertising profiles, or training our own general AI models.</strong>
         </div>
         <p>Receipt SN uses automated recognition to help convert receipt images into editable records. AI and OCR results may be incomplete, duplicated, misread, or incorrect. You remain responsible for reviewing and correcting records before relying on them for tax, accounting, reimbursement, legal, or financial purposes.</p>
-        <p>When you choose or use a feature that requires cloud-based recognition, the receipt image and related text may be processed by our backend and/or selected AI service providers. We do not store users' raw data. We design this processing solely to provide the requested feature, not to create public datasets or train generalized models from your receipt content.</p>
+        <p>When you choose or use a feature that requires cloud-based recognition, the receipt image and related text may be processed by our backend and/or selected AI service providers. These requests are sent without app account IDs, device IDs, Apple account identifiers, or payment identifiers. We do not store users' raw data. We design this processing solely to provide the requested feature, not to create public datasets or train generalized models from your receipt content.</p>
 
         <h2>5. Third-Party Service Providers</h2>
         <p>We may use trusted service providers to operate Receipt SN. These providers process information only as needed to provide their services to us or to you.</p>
@@ -189,7 +187,7 @@
         <h2>6. Local Storage, iCloud, and Retention</h2>
         <p>Receipt SN stores receipt records primarily on your device. If you delete individual records, they are removed from the app's local database subject to normal device and backup behavior.</p>
         <p><strong>iCloud synchronization:</strong> iCloud Sync is optional. If you enable it, receipt records may sync through Apple's iCloud infrastructure between devices signed in to your Apple Account. We do not host your private iCloud database and do not have direct access to records stored only in your private iCloud account.</p>
-        <p><strong>Retention:</strong> Local records remain until you delete them, reset the app, or remove the app from your device. Cloud processing requests are intended to be transient unless temporary retention is needed for security, debugging, abuse prevention, legal compliance, or service operation. Support emails and related correspondence may be retained as long as reasonably necessary to handle your request and maintain business records. Backend account and entitlement records may be retained as needed to preserve service state, investigate abuse, support customer cases, and meet legal obligations.</p>
+        <p><strong>Retention:</strong> Local records remain until you delete them, reset the app, or remove the app from your device. Cloud processing requests are intended to be transient unless temporary retention is needed for security, debugging, abuse prevention, legal compliance, or service operation. Support emails and related correspondence may be retained as long as reasonably necessary to handle your request and maintain business records.</p>
 
         <h2>7. Legal Bases for Processing</h2>
         <p>Where laws such as the GDPR or UK GDPR apply, our legal bases may include:</p>
@@ -208,7 +206,7 @@
 
         <h2>10. Your Choices and Rights</h2>
         <p>You can review, edit, export, and delete receipt records in the app. You can disable optional features such as iCloud sync where the app provides those controls. You can also uninstall the app to remove local app data from your device, subject to any iCloud, device backup, or exported copies you maintain.</p>
-        <p>Depending on your location, you may have rights to request access, correction, deletion, portability, restriction, objection, or withdrawal of consent. California residents may also request information about personal information practices and deletion rights under applicable California privacy laws. We do not sell personal information. If you want us to review or delete backend support or account records that relate to you, contact us and include your Support ID where possible.</p>
+        <p>Depending on your location, you may have rights to request access, correction, deletion, portability, restriction, objection, or withdrawal of consent. California residents may also request information about personal information practices and deletion rights under applicable California privacy laws. We do not sell personal information. If you want us to review or delete support correspondence that relates to you, contact us using the same email address or contact details used in your request where possible.</p>
 
         <h2>11. Children's Privacy</h2>
         <p>Receipt SN is not directed to children. The app may be rated for general audiences by the App Store, but receipt management, subscription, and cloud recognition features are intended to be used by adults or under appropriate parental or guardian supervision. We do not knowingly collect children's personal information for behavioral advertising or sale.</p>
